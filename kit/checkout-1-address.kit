@@ -1,0 +1,298 @@
+<!-- @import variables -->
+<!-- $checkout-nav: item item-selected -->
+<!-- @import header-login -->
+
+			<div class="site-content">
+				<div class="inner wrapper">
+
+					<div class="main" role="main" itemscope itemprop="mainContentOfPage">
+						<div class="main-content">
+							<div class="checkout-form">
+								<header class="checkout-form-header">
+									<h1 class="title">Pengiriman</h1>
+								</header>
+								<div class="checkout-form-content">
+									<div class="checkout-address checkout-section">
+										<header class="checkout-section-header">
+											<h2 class="title">Alamat Pengiriman</h2>
+										</header>
+										<div class="checkout-section-content">
+											<div class="form-toggle">
+												<input type="checkbox" id="dropship-form" class="input">
+												<label for="dropship-form">Kirim sebagai dropshipper</label>
+												<div class="form-toggle-groups">
+													<div class="form-groups">
+														<div class="form-group">
+															<label for="dropship-name" class="label">Nama Pengirim</label>
+															<input type="text" id="dropship-name" class="input">
+														</div>
+														<div class="form-group">
+															<label for="dropship-phone" class="label">Telepon Pengirim</label>
+															<input type="text" id="dropship-phone" class="input">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-radios">
+												<div class="form-group">
+													<input type="radio" id="checkout-address-1" class="input" name="checkout-address" checked="">
+													<label for="checkout-address-1" class="label">Rumah</label>
+													<div class="desc">
+														<address class="address">
+															Jl. Cluit Carang Cayu No. 88 A Blok B1 Utara<br>
+															Creen Cay Cluit Apartement Tower Cendana 11 CC<br>
+															Jakarta Utara, DKI Jakarta 14450<br>
+															Indonesia<br>
+															081234888888
+														</address>
+													</div>
+												</div>
+												<div class="form-group">
+													<input type="radio" id="checkout-address-2" class="input" name="checkout-address">
+													<label for="checkout-address-2" class="label">Kantor</label>
+													<div class="desc">
+														<address class="address">
+															Jl. Cluit Carang Cayu No. 88 A Blok B1 Utara<br>
+															Creen Cay Cluit Apartement Tower Cendana 11 CC<br>
+															Jakarta Utara, DKI Jakarta 14450<br>
+															Indonesia<br>
+															081234888888
+														</address>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<a href="#popup-address" class="checkout-address-new js-mfp-modal-link"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-shipping" /></svg> Kirim ke alamat lain</a>
+												<div id="popup-address" class="popup-address popup-inline mfp-hide">
+													<div class="popup-inline-header">
+														<h4 class="title">Alamat Pengiriman</h4>
+													</div>
+													<div class="popup-inline-content">
+														<div class="form-group">
+															<label for="address-label" class="label">Address Label</label>
+															<input type="text" id="address-label" class="input">
+															<p class="caption">Contoh: Rumah, Kantor, Apartemen</p>
+														</div>
+														<div class="form-groups">
+															<div class="form-group">
+																<label for="address-name" class="label">Nama</label>
+																<input type="text" id="address-name" class="input">
+															</div>
+															<div class="form-group">
+																<label for="address-phone" class="label">Telepon</label>
+																<div class="input input-phone">
+																	<input type="text" class="input input-phone-code" value="+62" readonly>
+																	<input type="text" id="address-phone" class="input">
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<label for="address-address" class="label">Alamat</label>
+															<textarea id="address-address" class="input"></textarea>
+														</div>
+														<div class="form-groups">
+															<div class="form-group">
+																<label for="address-province" class="label">Provinsi</label>
+																<select id="address-province" class="input">
+																	<option>DKI Jakarta</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<label for="address-city" class="label">Kotamadya</label>
+																<select id="address-city" class="input">
+																	<option>Jakarta Barat</option>
+																	<option>Jakarta Pusat</option>
+																	<option>Jakarta Selatan</option>
+																	<option>Jakarta Timur</option>
+																	<option>Jakarta Utara</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-groups">
+															<div class="form-group">
+																<label for="address-region" class="label">Kecamatan</label>
+																<select id="address-region" class="input">
+																	<option>Penjaringan</option>
+																	<option>Pluit</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<label for="address-postcode" class="label">Kode Pos</label>
+																<input type="text" id="address-postcode" class="input">
+															</div>
+														</div>
+														<div class="form-checkbox form-group">
+															<input type="checkbox" id="address-default" class="input">
+															<label for="address-default" class="label">Save in address book</label>
+														</div>
+													</div>
+													<div class="popup-inline-footer">
+														<a href="#" class="button button-link js-mfp-modal-dismiss">Cancel</a>
+														<button class="button">Save Address</button>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="checkout-notes" class="label">Catatan</label>
+												<textarea id="checkout-notes" class="input"></textarea>
+											</div>
+										</div>
+									</div>
+
+									<div class="checkout-shipping checkout-section">
+										<header class="checkout-section-header">
+											<h2 class="title">Metode Pengiriman</h2>
+										</header>
+										<div class="checkout-section-content">
+											<div class="form-radios">
+												<div class="form-group">
+													<input type="radio" id="checkout-courier-jne" class="input" name="checkout-courier" checked>
+													<label for="checkout-courier-jne" class="label">JNE</label>
+													<div class="desc">
+														<p>Pengiriman dengan kurir JNE, silahkan pilih paket yang Anda inginkan.</p>
+														<div class="form-radios">
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-jne-oke" class="input" name="checkout-courier-jne" checked>
+																<label for="checkout-courier-jne-oke" class="label">JNE OKE - Rp 16.000 (3-4 hari)</label>
+															</div>
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-jne-reg" class="input" name="checkout-courier-jne">
+																<label for="checkout-courier-jne-reg" class="label">JNE REG - Rp 18.000 (2-3 hari)</label>
+															</div>
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-jne-yes" class="input" name="checkout-courier-jne">
+																<label for="checkout-courier-jne-yes" class="label">JNE YES - Rp 22.000 (1-2 hari)</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<input type="radio" id="checkout-courier-tiki" class="input" name="checkout-courier">
+													<label for="checkout-courier-tiki" class="label">TIKI</label>
+													<div class="desc">
+														<p>Pengiriman dengan kurir TIKI, silahkan pilih paket yang Anda inginkan.</p>
+														<div class="form-radios">
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-tiki-oke" class="input" name="checkout-courier-tiki" checked>
+																<label for="checkout-courier-tiki-oke" class="label">TIKI OKE - Rp 16.000 (3-4 hari)</label>
+															</div>
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-tiki-reg" class="input" name="checkout-courier-tiki">
+																<label for="checkout-courier-tiki-reg" class="label">TIKI REG - Rp 18.000 (2-3 hari)</label>
+															</div>
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-tiki-yes" class="input" name="checkout-courier-tiki">
+																<label for="checkout-courier-tiki-yes" class="label">TIKI ONS - Rp 22.000 (1-2 hari)</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<input type="radio" id="checkout-courier-jnt" class="input" name="checkout-courier">
+													<label for="checkout-courier-jnt" class="label">J&T</label>
+													<div class="desc">
+														<p>Pengiriman dengan kurir J&T, silahkan pilih paket yang Anda inginkan.</p>
+														<div class="form-radios">
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-jnt-oke" class="input" name="checkout-courier-jnt" checked>
+																<label for="checkout-courier-jnt-oke" class="label">J&T Hemat - Rp 16.000 (3-4 hari)</label>
+															</div>
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-jnt-reg" class="input" name="checkout-courier-jnt">
+																<label for="checkout-courier-jnt-reg" class="label">J&T Regular - Rp 18.000 (2-3 hari)</label>
+															</div>
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-jnt-yes" class="input" name="checkout-courier-jnt">
+																<label for="checkout-courier-jnt-yes" class="label">J&T Express - Rp 22.000 (1-2 hari)</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<input type="radio" id="checkout-courier-wahana" class="input" name="checkout-courier">
+													<label for="checkout-courier-wahana" class="label">Wahana</label>
+													<div class="desc">
+														<p>Pengiriman dengan kurir Wahana, silahkan pilih paket yang Anda inginkan.</p>
+														<div class="form-radios">
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-wahana-reg" class="input" name="checkout-courier-wahana">
+																<label for="checkout-courier-wahana-reg" class="label">Wahana Regular - Rp 18.000 (2-3 hari)</label>
+															</div>
+															<div class="form-group">
+																<input type="radio" id="checkout-courier-wahana-yes" class="input" name="checkout-courier-wahana">
+																<label for="checkout-courier-wahana-yes" class="label">Wahana Express - Rp 22.000 (1-2 hari)</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<input type="radio" id="checkout-courier-cod" class="input" name="checkout-courier">
+													<label for="checkout-courier-cod" class="label">Warehouse Pickup</label>
+													<div class="desc">
+														<p>Pengambilan pesanan di toko kami harus disertai dengan Invoice Order</p>
+														<address class="address">
+															<strong>DISTRI.ID</strong><br>
+															Jl. Pangeran Jayakarta 129 No. D6<br>
+															Sawah Besar - Jakarta Pusat 10730<br>
+															T: (021) - 6016581
+														</address>
+														<p>
+															<strong>Jam Kerja</strong><br>
+															Senin – Jumat: 09.00 – 18.00<br>
+															Sabtu: 09.00 – 14.00<br>
+															Tutup pada pada hari Minggu dan hari libur nasional
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<footer class="checkout-form-footer">
+									<div class="form-group form-group-right">
+										<a href="checkout-2.html" class="button button-large">Lanjutkan ke Pembayaran</a>
+									</div>
+								</footer>
+							</div>
+						</div>
+					</div>
+
+					<div class="main-sidebar">
+						<div class="checkout-summary section">
+							<header class="checkout-summary-header">
+								<h2 class="title">Order Summary</h2>
+							</header>
+							<div class="checkout-summary-content">
+								<div class="checkout-summary-items">
+									<div class="checkout-summary-item">
+										<div class="meta">
+											<h4 class="name">Beauty Protector Jet Set</h4>
+											<p class="quantity"><span class="count">2</span> &times; <span class="price">Rp 450.000</span></p>
+										</div>
+										<p class="subtotal">Rp 900.000</p>
+									</div>
+									<div class="checkout-summary-item">
+										<div class="meta">
+											<h4 class="name">Macadamia Professional™ Nourishing Moisture Oil Mousse</h4>
+											<p class="quantity"><span class="count">2</span> &times; <span class="price">Rp 450.000</span></p>
+										</div>
+										<p class="subtotal">Rp 900.000</p>
+									</div>
+								</div>
+								<div class="checkout-summary-pricing">
+									<p class="row"><span class="label">Subtotal</span> <span class="value">Rp 700.000</span></p>
+									<p class="row"><span class="label">Shipping</span> <span class="value">-</span></p>
+									<p class="discount row"><span class="label">Discount <span class="sublabel">Coupon: DISTRINEW</span></span> <span class="value">- Rp 40.000</span></p>
+									<p class="total row"><span class="label">Total</span> <span class="value">Rp 660.000</span></p>
+								</div>
+							</div>
+							<div class="checkout-summary-footer">
+								<a href="#" class="button button-gray">Edit Cart</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+<!-- @import footer -->

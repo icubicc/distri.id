@@ -1,0 +1,11 @@
+05.10
++ payment-confirmation.html: perubahan HTML pada .payment-confirmation (apabila diperlukan pada url bisa ditambahkan ?tab=registration-payment-confirmation agar tab Pembayaran Registrasi langsung terbuka)
++ account-dashboard.html: tambahan .unpaid pada .account-badge
++ account-orders.html: tambahan .unpaid pada .account-order-table
++ account-orders-single.html: tambahan status: Unpaid Purchase, tambahan .paid dan .unpaid pada .order-single-summary
++ style.css: update
++ bundle.js: update
+
+04.07
++ checkout-1.html, checkout-1-address.html: penambahan form dropship #dropship-form
++ style.css: update

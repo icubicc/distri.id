@@ -1,0 +1,48 @@
+.rating-star {
+
+	.rating {
+		display: inline-block;
+		font-family: 'star';
+		height: 16px;
+		line-height: 1;
+		position: relative;
+		text-rendering: auto;
+		vertical-align: middle;
+		white-space: nowrap;
+		width: 90px;
+
+		&:before {
+			content: "\e900\e900\e900\e900\e900";
+			color: $color-warning;
+			float: left;
+			left: 0;
+			letter-spacing: -0.05em;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	.fill {
+		color: $color-warning;
+		float: left;
+		height: 16px;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+
+		&:before {
+			content: "\e901\e901\e901\e901\e901";
+			left: 0;
+			letter-spacing: -0.05em;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	.count {
+		color: $color-400;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

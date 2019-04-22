@@ -1,0 +1,137 @@
+.account-badge {
+	background-color: $color-background-light;
+	margin-bottom: 24px;
+	padding: 16px;
+
+	p {
+		margin-bottom: 2px;
+	}
+
+	.name {
+		@include font-size-h4;
+		margin-bottom: 4px;
+	}
+
+	.role {
+		color: $color-one-500;
+		font-weight: 700;
+	}
+
+	.expire {
+		@include font-size-300;
+		color: $color-text-light;
+	}
+
+	.unpaid {
+		@include font-size-400;
+		background-color: $color-alert-light;
+		color: $color-alert;
+		margin-top: 4px;
+		padding: 4px 8px;
+	}
+
+	.value {
+		font-weight: 700;
+		white-space: nowrap;
+	}
+}
+
+.account-section {
+	margin-bottom: 32px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&.account-section-billing {
+		display: none;
+	}
+}
+
+.account-section-header {
+	margin-bottom: 16px;
+
+	.title {
+		@include font-size-h4;
+		margin-bottom: 2px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.subtitle {
+		@include font-size-400;
+	}
+}
+
+.account-section-footer {
+	margin-top: 24px;
+}
+
+.account-summary {
+	margin: -8px;
+	overflow: hidden;
+
+	@include breakpoint(creeper) {
+		margin: -12px;
+	}
+
+	> div {
+		padding: 8px;
+
+		@include breakpoint(creeper) {
+			padding: 12px;
+		}
+
+		@include breakpoint(crawler) {
+			float: left;
+			width: 50%;
+
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+	}
+
+	p {
+		margin-bottom: 4px;
+	}
+
+	.title {
+		@include font-size-h5;
+		font-family: $sans-serif;
+		margin-bottom: 4px;
+		text-transform: none;
+
+		.label {
+			@include font-size-500;
+			color: $color-text-light;
+			font-weight: 400;
+		}
+	}
+
+	.address {
+		margin-bottom: 4px;
+	}
+
+	.link {
+
+		+ .link {
+			margin-left: 4px;
+		}
+	}
+}
+
+.account-order-count {
+	@include font-size-400;
+	color: $color-text-light;
+	margin-bottom: 8px;
+}
+
+.account-order-table {
+
+	.unpaid {
+		color: $color-alert;
+	}
+}

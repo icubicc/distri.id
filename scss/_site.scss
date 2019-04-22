@@ -1,0 +1,431 @@
+// CONTAINER CLASS
+
+.site {
+	background-color: $white;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	position: relative;
+
+	&:before {
+		content: "";
+		background-color: $black;
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		transition: opacity 0.2s $ease;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+}
+
+.site-topper {
+	@include font-size-200;
+	background-color: $color-background-dark;
+	color: $white;
+	position: sticky;
+	z-index: 9;
+
+	.inner {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 8px;
+		padding-top: 8px;
+	}
+}
+
+.site-topper-contact {
+
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+
+	.icon {
+		height: 16px;
+		fill: $white;
+		margin-right: 4px;
+		vertical-align: middle;
+		width: 16px;
+	}
+
+	.number {
+		font-weight: 700;
+		margin-left: -4px;
+		vertical-align: middle;
+	}
+}
+
+.site-topper-nav {
+
+	.item {
+		display: inline-block;
+		margin-right: 16px;
+		position: relative;
+		text-transform: uppercase;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.link {
+		color: $white;
+		font-weight: 700;
+		transition: all 0.2s $ease;
+
+		&:hover,
+		&:focus {
+			color: $color-one-400;
+			text-decoration: none;
+		}
+	}
+
+	.count {
+		background-color: $color-alert;
+		border-radius: 16px;
+		color: $white;
+		display: inline-block;
+		font-size: $font-size-100;
+		font-weight: 400;
+		height: 14px;
+		line-height: 14px;
+		position: relative;
+		text-align: center;
+		top: -1px;
+		width: 14px;
+	}
+}
+
+.site-header {
+	background-color: $white;
+	border-bottom: 1px solid $color-border;
+	flex: 0 0 auto;
+	position: sticky;
+	width: 100%;
+	z-index: 8;
+
+	.inner {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 24px;
+		padding-top: 24px;
+	}
+}
+
+.site-header-logo {
+	transform-origin: left center;
+
+	.tagline {
+		color: $color-text-light;
+		font-size: $font-size-400;
+		line-height: 1;
+		margin-top: 6px;
+		text-align: right;
+	}
+}
+
+.site-header-nav {
+	display: none;
+
+	@include breakpoint(walker) {
+		display: block;
+	}
+
+	.item {
+		display: inline-block;
+		margin-right: 24px;
+		position: relative;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.item-selected {
+
+			.link {
+				color: $color-one-500;
+
+				&.link-highlight {
+					color: $white;
+				}
+			}
+
+			.icon {
+				fill: $color-one-500;
+			}
+		}
+	}
+
+	.link {
+		@include font-size-600;
+		color: $color-text;
+		font-weight: 700;
+		text-decoration: none;
+		transition: all 0.2s $ease;
+
+		&:hover,
+		&:focus {
+			color: $color-one-500;
+
+			.icon {
+				fill: $color-one-500;
+			}
+		}
+
+		&.link-highlight {
+			background-color: $color-one-500;
+			border-radius: 24px;
+			color: $white;
+			display: inline-block;
+			padding: 4px 20px;
+
+			&:hover,
+			&:focus {
+				background-color: $color-one-400;
+			}
+		}
+	}
+
+	.icon {
+		position: relative;
+		top: -2px;
+		transition: all 0.2s $ease;
+	}
+
+	.count {
+		background-color: $color-alert;
+		border-radius: 16px;
+		color: $white;
+		display: inline-block;
+		font-size: $font-size-200;
+		font-weight: 400;
+		height: 16px;
+		line-height: 16px;
+		position: relative;
+		text-align: center;
+		top: -2px;
+		width: 16px;
+	}
+}
+
+.site-content {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+	position: relative;
+	z-index: 3;
+
+	> .inner {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		width: 100%;
+
+		@include breakpoint(walker) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}
+
+.site-footer {
+	background-color: $color-800;
+	color: $white;
+	flex: 0 0 auto;
+	position: relative;
+	width: 100%;
+	z-index: 4;
+
+	a {
+		color: $white;
+		transition: all 0.2s $ease;
+
+		&:hover,
+		&:focus {
+			color: $color-one-500;
+			text-decoration: none;
+		}
+	}
+}
+
+.site-footer-main {
+
+	.wrapper {
+		padding-bottom: 32px;
+		padding-top: 32px;
+
+		@include breakpoint(walker) {
+			padding-bottom: 48px;
+			padding-top: 48px;
+		}
+	}
+}
+
+.site-footer-sections {
+	margin: -16px;
+
+	@include breakpoint(crawler) {
+		display: flex;
+	}
+}
+
+.site-footer-section {
+	flex: 1 1 0;
+	padding: 16px;
+}
+
+.site-footer-links {
+
+	.title {
+		@include font-size-h6;
+		margin-bottom: 12px;
+		text-transform: uppercase;
+	}
+
+	.item {
+		margin-bottom: 8px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.site-footer-partners {
+	margin-bottom: 32px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.title {
+		@include font-size-h6;
+		margin-bottom: 12px;
+		text-transform: uppercase;
+	}
+
+	.partners {
+		@include clearfix;
+		list-style: none;
+		margin: 0 -4px -4px 0;
+		padding: 0;
+	}
+
+	.partner {
+		float: left;
+		margin: 0 4px 4px 0;
+	}
+}
+
+.site-footer-contact {
+	margin-bottom: 24px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.title {
+		@include font-size-h6;
+		margin-bottom: 12px;
+		text-transform: uppercase;
+	}
+
+	.social {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.item {
+		display: inline-block;
+		margin-right: 4px;
+
+		&.item-facebook {
+
+			.icon {
+
+				&:hover,
+				&:focus {
+					fill: $color-facebook;
+				}
+			}
+		}
+
+		&.item-twitter {
+
+			.icon {
+
+				&:hover,
+				&:focus {
+					fill: $color-twitter;
+				}
+			}
+		}
+
+		&.item-google {
+
+			.icon {
+
+				&:hover,
+				&:focus {
+					fill: $color-google;
+				}
+			}
+		}
+
+		&.item-instagram {
+
+			.icon {
+
+				&:hover,
+				&:focus {
+					fill: $color-instagram;
+				}
+			}
+		}
+
+		.icon {
+			transition: all 0.2s $ease;
+
+			&:hover,
+			&:focus {
+				fill: $color-one-400;
+			}
+		}
+	}
+
+	.icon {
+		fill: $white;
+		height: 32px;
+		width: 32px;
+	}
+}
+
+.site-footer-attribution {
+	@include font-size-300;
+	border-top: 1px solid $color-700;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.wrapper {
+		padding-bottom: 12px;
+		padding-top: 12px;
+
+		@include breakpoint(crawler) {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	.copyright {
+		margin: 0;
+	}
+}

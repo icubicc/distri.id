@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.12.3//EN
+N:;;;;
+FN:Distri.id
+ORG:Distri.id;
+item1.TEL;type=pref:021-6016581
+item1.X-ABLabel:WhatsApp
+ADR;type=HOME;type=pref:;;Jl. Pangeran Jayakarta 129 No. D6 Sawah Besar;Jakarta Pusat;DKI Jakarta;10730;Indonesia
+item2.URL;type=pref:http://distri.id/
+item2.X-ABLabel:_$!<HomePage>!$_
+X-ABShowAs:COMPANY
+END:VCARD

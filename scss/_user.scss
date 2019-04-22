@@ -1,0 +1,261 @@
+.user-register {
+	background-color: $color-background;
+}
+
+.user-register-content {
+	@include box-shadow-600;
+	background-color: $white;
+	border-radius: 8px;
+	margin: 0 auto 64px;
+	max-width: 1024px;
+	padding: 16px;
+
+	@include breakpoint(creeper) {
+		padding: 24px;
+	}
+
+	@include breakpoint(crawler) {
+		padding: 32px;
+	}
+
+	@include breakpoint(walker) {
+		display: flex;
+	}
+
+	@include breakpoint(runner) {
+		padding: 48px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.user-register-text {
+		flex: 1 1 auto;
+		margin-bottom: 24px;
+
+		@include breakpoint(walker) {
+			margin-bottom: 0;
+			padding-right: 48px;
+		}
+
+		.title {
+			margin-bottom: 16px;
+		}
+
+		.desc {
+			@include font-size-400;
+
+			@include breakpoint(crawler) {
+				@include font-size-500;
+			}
+		}
+	}
+
+	.user-register-form {
+		background-color: $color-100;
+		flex: 0 0 320px;
+		padding: 16px;
+
+		@include breakpoint(crawler) {
+			padding: 24px;
+		}
+
+		.link {
+
+			&.link-login {
+				@include font-size-400;
+				display: inline-block;
+				margin-top: 16px;
+			}
+		}
+	}
+}
+
+.user-login {
+	background-color: $color-100;
+	margin: 0 auto;
+	max-width: 512px;
+	padding: 16px;
+
+	@include breakpoint(creeper) {
+		padding: 24px;
+	}
+}
+
+.user-login-header {
+	border-bottom: 2px solid $color-one-500;
+	margin-bottom: 24px;
+	padding-bottom: 12px;
+	text-align: center;
+
+	.title {
+		@include font-size-h3;
+		margin-bottom: 4px;
+		text-transform: uppercase;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.user-login-content {
+
+	.form-group {
+		align-items: center;
+		display: flex;
+		margin-bottom: 12px;
+
+		&.form-group-action {
+			align-items: flex-start;
+			display: flex;
+			flex-direction: column;
+			padding-left: 96px;
+
+			@include breakpoint(crawler) {
+				align-items: flex-start;
+				flex-direction: row;
+				justify-content: space-between;
+				padding-left: 128px;
+			}
+
+			.form-checkbox,
+			.form-submit {
+				flex: 1 1 auto;
+				width: 100%;
+			}
+
+			.form-checkbox {
+				margin-bottom: 8px;
+
+				@include breakpoint(walker) {
+					margin-bottom: 0;
+				}
+			}
+
+			.label {
+				flex: 0 0 auto;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.label {
+			flex: 0 0 96px;
+			padding-right: 8px;
+
+			@include breakpoint(crawler) {
+				flex: 0 0 128px;
+			}
+		}
+
+		.input {
+			margin-top: 0;
+		}
+
+		.button {
+			margin-left: auto;
+			min-width: 128px;
+		}
+
+		.form-submit {
+			text-align: left;
+
+			@include breakpoint(crawler) {
+				display: flex;
+				flex-direction: column;
+				text-align: right;
+			}
+
+			.button {
+				width: 100%;
+			}
+
+			.link {
+				@include font-size-400;
+				color: $color-text-light;
+				display: inline-block;
+				margin-top: 4px;
+			}
+		}
+	}
+}
+
+.user-login-footer {
+	@include font-size-400;
+	margin-top: 24px;
+	text-align: center;
+
+	@include breakpoint(crawler) {
+		margin-top: 32px;
+	}
+
+	p {
+		margin-bottom: 4px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.user-payment {
+	background-color: $color-100;
+	margin: 0 auto;
+	max-width: 512px;
+	padding: 32px;
+}
+
+.user-payment-header {
+	border-bottom: 2px solid $color-one-500;
+	margin-bottom: 24px;
+	padding-bottom: 12px;
+	text-align: center;
+
+	.title {
+		@include font-size-h3;
+		margin-bottom: 4px;
+		text-transform: uppercase;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.user-payment-content {
+	text-align: center;
+
+	p {
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.user-passreset {
+	@include box-shadow-600;
+	background-color: $white;
+	border-radius: 12px;
+	margin: 0 auto;
+	max-width: 640px;
+	padding: 24px;
+
+	@include breakpoint(creeper) {
+		padding: 32px;
+	}
+}
+
+.user-passreset-header {
+	border-bottom: 1px solid $color-border-light;
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+
+	.title {
+		margin-bottom: 4px;
+	}
+}

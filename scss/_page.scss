@@ -1,0 +1,198 @@
+.page-highlight {
+	position: relative;
+	z-index: 1;
+
+	&.page-highlight-gray {
+		background-color: $color-100;
+	}
+
+	&.page-highlight-duotone {
+		background-image: linear-gradient(to right, $color-one-500 50%, $color-info 50%);
+		background-color: $color-one-500;
+		color: $white;
+
+		a {
+			color: $white;
+		}
+
+		.wrapper {
+			padding-bottom: 0;
+			padding-top: 0;
+		}
+
+		.page-highlight-section {
+			background-color: $color-one-500;
+			margin: 0 -16px;
+
+			@include breakpoint(creeper) {
+				margin: 0 -24px;
+			}
+
+			@include breakpoint(crawler) {
+				margin: 0;
+			}
+
+			&:nth-child(2) {
+				background-color: $color-info;
+			}
+		}
+	}
+
+	&.page-highlight-extra {
+
+		.wrapper {
+			padding-bottom: 48px;
+			padding-top: 48px;
+
+			@include breakpoint(creeper) {
+				padding-bottom: 64px;
+				padding-top: 64px;
+			}
+
+			@include breakpoint(crawler) {
+				padding-bottom: 96px;
+				padding-top: 96px;
+			}
+		}
+	}
+
+	.wrapper {
+		padding-bottom: 48px;
+		padding-top: 48px;
+
+		@include breakpoint(creeper) {
+			padding-bottom: 64px;
+			padding-top: 64px;
+		}
+	}
+}
+
+.page-highlight-header {
+	margin: 0 auto 48px;
+	max-width: 640px;
+	position: relative;
+	text-align: center;
+
+	@include breakpoint(creeper) {
+		margin-bottom: 64px;
+	}
+
+	&:before {
+		content: "";
+		background-color: $color-200;
+		bottom: -16px;
+		height: 6px;
+		left: 50%;
+		margin-left: -24px;
+		position: absolute;
+		width: 48px;
+	}
+
+	.title {
+		@include font-size-h2;
+		color: $color-500;
+		letter-spacing: 0.05em;
+		margin-bottom: 8px;
+		text-indent: 0.25em;
+		text-transform: uppercase;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.page-highlight-sections {
+
+	@include breakpoint(crawler) {
+		display: flex;
+	}
+}
+
+.page-highlight-section {
+	flex: 1 1 0;
+}
+
+.page-main {
+	padding-bottom: 48px;
+
+	@include breakpoint(creeper) {
+		padding-bottom: 64px;
+	}
+}
+
+.page-main-header {
+	background-color: $color-800;
+	background-position: center center;
+	background-size: cover;
+	color: $white;
+	padding-top: 64px;
+	padding-bottom: 48px;
+
+	.wrapper {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+}
+
+.page-main-press {
+	text-align: center;
+
+	.title {
+		margin-bottom: 8px;
+	}
+
+	.logos {
+		margin: -4px;
+	}
+
+	.logo {
+		display: inline-block;
+		padding: 4px;
+	}
+}
+
+.page-main-content {
+
+	.wrapper {
+		@include box-shadow-500;
+		background-color: $white;
+		border-top: 4px solid $color-one-500;
+		margin: -32px 12px 0 12px;
+		max-width: 960px;
+		padding: 32px 16px;
+		position: relative;
+		z-index: 2;
+
+		@include breakpoint(creeper) {
+			margin-left: 24px;
+			margin-right: 24px;
+			padding: 32px;
+		}
+
+		@include breakpoint(crawler) {
+			margin-left: 32px;
+			margin-right: 32px;
+			// padding: 48px;
+		}
+
+		@include breakpoint(runner) {
+			margin: -32px auto 0;
+		}
+	}
+
+	.title {
+		margin-bottom: 24px;
+
+		@include breakpoint(creeper) {
+			margin-bottom: 32px;
+		}
+	}
+
+	.wordpress-post {
+
+		@include breakpoint(crawler) {
+			@include font-size-600;
+		}
+	}
+}

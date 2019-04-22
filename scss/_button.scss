@@ -1,0 +1,156 @@
+.button {
+	background-color: $color-one-500;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: $white;
+	display: inline-block;
+	line-height: inherit;
+	padding: 3px 12px;
+	position: relative;
+	text-align: center;
+	transition: all 0.2s $ease;
+	vertical-align: middle;
+	white-space: nowrap;
+
+	&:visited {
+		background-color: $color-one-500;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: $color-one-400;
+		color: $white;
+		outline: 0;
+		text-decoration: none;
+	}
+
+	&:active {
+		background-color: $color-one-600;
+	}
+
+	&.button-rounded {
+		border-radius: 24px;
+	}
+
+	&.button-small {
+		@include font-size-400;
+	}
+
+	&.button-large {
+		font-weight: 700;
+		max-width: 320px;
+		padding-bottom: 7px;
+		padding-top: 7px;
+		width: 100%;
+	}
+
+	&.button-alt {
+		background-color: $color-500;
+		color: $white;
+
+		&:hover,
+		&:focus {
+			background-color: $color-400;
+		}
+
+		&:active {
+			background-color: $color-600;
+		}
+	}
+
+	&.button-line {
+		background-color: transparent;
+		border-color: $color-one-500;
+		color: $color-one-500;
+
+		&:hover,
+		&:focus {
+			border-color: $color-one-400;
+			color: $color-one-400;
+		}
+
+		&:active {
+			border-color: $color-one-600;
+		}
+	}
+
+	&.button-gray {
+		background-color: $color-400;
+
+		&:hover,
+		&:focus {
+			background-color: $color-500;
+		}
+
+		&:active {
+			background-color: $color-600;
+		}
+	}
+
+	&.button-success {
+		background-color: $color-success;
+
+		&:hover,
+		&:focus {
+			background-color: lighten($color-success, 10%);
+		}
+
+		&:active {
+			background-color: darken($color-success, 10%);
+		}
+	}
+
+	&.button-warning {
+		background-color: $color-warning;
+
+		&:hover,
+		&:focus {
+			background-color: lighten($color-warning, 10%);
+		}
+
+		&:active {
+			background-color: darken($color-warning, 10%);
+		}
+	}
+
+	&.button-alert {
+		background-color: $color-alert;
+
+		&:hover,
+		&:focus {
+			background-color: lighten($color-alert, 10%);
+		}
+
+		&:active {
+			background-color: darken($color-alert, 10%);
+		}
+	}
+
+	&.button-link {
+		background-color: transparent;
+		color: $color-text;
+		padding-left: 0;
+		padding-right: 0;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+		}
+	}
+
+	&.button-disable {
+		background-color: $color-400;
+		pointer-events: none;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $color-400;
+		}
+	}
+
+	+ .button {
+		margin-left: 8px;
+	}
+}

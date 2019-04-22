@@ -1,0 +1,71 @@
+.payment-confirmation {
+
+	@include breakpoint(walker) {
+		display: flex;
+	}
+
+	.payment-confirmation-section {
+		flex: 1 1 0;
+		margin-bottom: 32px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include breakpoint(walker) {
+			margin-bottom: 0;
+			margin-right: 32px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.payment-confirmation-nav {
+	margin-bottom: 32px;
+
+	.list {
+		border: 1px solid $color-one-600;
+		border-radius: 3px;
+		display: flex;
+		list-style: none;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+	}
+
+	.item {
+		display: flex;
+		flex: 1 1 0;
+		flex-direction: column;
+
+		&:not(:last-child) {
+			border-right: 1px solid $color-one-600;
+		}
+	}
+
+	.tab {
+		color: $color-text-light;
+		display: block;
+		flex: 1 1 0;
+		font-weight: 700;
+		padding: 12px 8px;
+		text-align: center;
+		text-decoration: none;
+
+		&.is-tabbed {
+			background-color: $color-one-500;
+			color: $white;
+		}
+	}
+}
+
+.payment-confirmation-form {
+	display: none;
+
+	&.is-tabbed {
+		display: block;
+	}
+}

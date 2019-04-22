@@ -1,0 +1,329 @@
+.form-groups {
+	margin: -8px -8px 8px;
+	position: relative;
+
+	@include breakpoint(crawler) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&:last-child {
+		margin-bottom: -8px;
+	}
+
+	.form-group {
+		margin-bottom: 0;
+		padding: 8px 8px;
+
+		@include breakpoint(crawler) {
+			flex: 0 1 50%;
+		}
+
+		&.form-group-wide {
+
+			@include breakpoint(crawler) {
+				flex: 1 1 100%;
+			}
+		}
+	}
+}
+
+.form-group {
+	margin-bottom: 16px;
+	position: relative;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.label {
+		display: inline-block;
+
+		.input {
+			display: inline-block;
+			width: auto;
+		}
+
+		+ .input {
+			margin-top: 2px;
+		}
+	}
+
+	.input {
+		display: block;
+		width: 100%;
+
+		&.input-phone {
+			display: flex;
+
+			.input-phone-code {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+				border-right: none;
+				color: $color-text;
+				flex: 0 1 auto;
+				width: 64px;
+
+				+ .input {
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+					flex: 1 1 auto;
+				}
+			}
+		}
+	}
+
+	.caption {
+		@include font-size-400;
+		color: $color-text-light;
+		margin: 4px 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.req {
+		color: $color-alert;
+	}
+
+	&.form-group-submit {
+		text-align: right;
+	}
+}
+
+.form-checkbox,
+.form-radio {
+	align-items: baseline;
+	display: flex;
+
+	.input {
+		flex: 0 0 auto;
+		margin-right: 6px;
+		width: auto;
+	}
+
+	.label {
+		flex: 0 1 auto;
+	}
+}
+
+.form-radios {
+	border: 1px solid $color-200;
+	border-radius: 6px;
+	margin-bottom: 16px;
+	overflow: hidden;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.form-radios {
+		border: 1px solid $color-200;
+		box-shadow: none;
+		margin-top: 12px;
+
+		.form-group {
+			background-color: transparent;
+			margin-bottom: 0;
+		}
+
+		.input {
+
+			&:checked {
+
+				+ .label {
+					background-color: transparent;
+					color: $color-text;
+
+					&:before {
+						background-image: url("assets/images/symbols/icon-check-light.svg");
+						background-color: $color-success;
+						border-color: transparent;
+					}
+				}
+			}
+
+			+ .label {
+				background-color: transparent;
+				position: relative;
+
+				&:before {
+					content: "";
+					background-color: $white;
+					background-size: 14px;
+					border: 1px solid $color-border;
+					border-radius: 50%;
+					color: $white;
+					display: inline-block;
+					height: 16px;
+					line-height: 16px;
+					margin-right: 8px;
+					position: relative;
+					top: -2px;
+					vertical-align: middle;
+					width: 16px;
+				}
+			}
+		}
+	}
+
+	.form-group {
+		border-bottom: 1px solid $color-200;
+		margin-bottom: 0;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+	.input {
+		display: none;
+
+		+ .label {
+			background-color: $color-100;
+			color: $color-text-light;
+			display: block;
+			font-weight: 600;
+			margin-bottom: 0;
+			padding: 16px;
+			width: 100%;
+
+			&:hover {
+				color: $color-600;
+			}
+		}
+
+		&:checked {
+
+			+ .label {
+				background-color: transparent;
+				color: $color-one-500;
+
+				+ .desc {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.desc {
+		display: none;
+		margin-top: -12px;
+		padding: 0 16px 16px;
+
+		p {
+			margin-bottom: 12px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.logos {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.logo {
+		border: 1px solid $color-border-light;
+		border-radius: 3px;
+		display: inline-block;
+		overflow: hidden;
+	}
+}
+
+.form-file-input {
+
+	.js & {
+		@include hidden;
+	}
+}
+
+.form-file-label {
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	.no-js & {
+		display: none;
+	}
+
+	&:hover {
+
+		.button {
+			background-color: $color-500;
+		}
+	}
+
+	> * {
+		pointer-events: none;
+	}
+
+	.button {
+		@include font-size-400;
+		background-color: $color-400;
+		color: $white;
+		margin-right: 4px;
+		padding: 6px 12px;
+
+		&:hover {
+			background-color: $color-500;
+		}
+	}
+
+	.caption {
+		@include font-size-400;
+		color: $color-text-light;
+		display: inline-block;
+		vertical-align: middle;
+
+		&.has-caption {
+			color: $color-text;
+		}
+	}
+}
+
+.form-toggle {
+	background-color: $color-background-light;
+	border: 1px solid $color-border;
+	border-radius: 4px;
+	margin-bottom: 24px;
+	overflow: hidden;
+	padding: 8px 12px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.form-toggle-groups {
+		display: none;
+	}
+
+	> .input {
+		margin-right: 2px;
+		position: relative;
+		top: -1px;
+
+		&:checked {
+
+			~ .form-toggle-groups {
+				background-color: $white;
+				display: block;
+				margin: 8px -12px -8px;
+				padding: 12px;
+			}
+		}
+	}
+}
+
+.form-submit {
+	text-align: right;
+}

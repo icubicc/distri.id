@@ -1,0 +1,25 @@
+.search-form {
+	margin-bottom: 24px;
+	position: relative;
+
+	.input {
+		padding-bottom: 8px;
+		padding-top: 8px;
+		width: 100%;
+	}
+
+	.button {
+		background-color: transparent;
+		bottom: 0;
+		padding: 0 4px;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.icon {
+		fill: $color-500;
+		height: 24px;
+		width: 24px;
+	}
+}

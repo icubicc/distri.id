@@ -1,0 +1,30 @@
+.about-summary {
+	background-image: url(assets/images/bg-logomark.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	padding: 48px 24px 24px;
+
+	@include breakpoint(crawler) {
+		padding: 64px 32px 32px 0;
+	}
+
+	@include breakpoint(runner) {
+		padding: 96px 48px 48px 0;
+	}
+}
+
+.about-summary-title {
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+
+.about-summary-content {
+
+	p {
+		margin-bottom: 0.5em;
+	}
+
+	.link {
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,46 @@
+.table {
+
+	.center {
+		text-align: center;
+	}
+}
+
+.table-wrapper {
+	@include font-size-400;
+	background: linear-gradient(to right, $white 25%, rgba($white, 0)),
+				linear-gradient(to right, rgba($white, 0), $white 75%) 100% 0,
+				radial-gradient(farthest-side at 0 50%, rgba($black, 0.2), rgba($black, 0)) 0 50%,
+				radial-gradient(farthest-side at 100% 50%, rgba($black, 0.2), rgba($black, 0)) 100% 50%;
+	background-attachment: local, local, scroll, scroll;
+	background-color: $white;
+	background-repeat: no-repeat;
+	background-size: 36px 100%, 36px 100%, 12px 100%, 12px 100%;
+	border: 1px solid $color-border;
+	margin-bottom: 24px;
+	overflow-x: auto;
+
+	@include breakpoint(crawler) {
+		@include font-size-500;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.table {
+		background-color: transparent;
+		border: none;
+	}
+
+	th,
+	td {
+
+		&:first-child {
+			border-left: 0;
+		}
+
+		&:last-child {
+			border-right: 0;
+		}
+	}
+}

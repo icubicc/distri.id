@@ -1,0 +1,157 @@
+.list-inline {
+	list-style: none;
+	font-size: 0;
+	margin: 0 -8px -8px 0;
+	padding: 0;
+
+	.item {
+		display: inline-block;
+		font-size: $font-size-500;
+		margin: 0 8px 8px 0;
+	}
+}
+
+.list-ordered,
+.list-unordered {
+	list-style: none;
+	padding-left: 24px;
+	text-indent: -24px;
+
+	li {
+
+		&:before {
+			content: "\2022";
+			display: inline-block;
+			text-indent: 2px;
+			padding-right: 6px;
+			width: 24px;
+		}
+	}
+}
+
+.list-ordered {
+
+	.item {
+		counter-increment: list-ordered;
+
+		&:before {
+			content: counter(list-ordered) ". ";
+			text-align: right;
+			text-indent: 0;
+		}
+	}
+}
+
+.list-navigation {
+	background-color: $color-background-light;
+	padding: 0 16px;
+
+	@include breakpoint(walker) {
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.list-navigation-toggle {
+		background-color: $color-background;
+		color: $white;
+		margin: 0px -16px;
+		padding-left: 16px;
+		padding-right: 16px;
+		text-transform: uppercase;
+
+		@include breakpoint(walker) {
+			display: none;
+		}
+
+		&:hover,
+		&:focus {
+			color: $white;
+		}
+
+		+ .list {
+			display: none;
+
+			@include breakpoint(walker) {
+				display: block;
+			}
+		}
+
+		.icon {
+			fill: $white;
+		}
+	}
+
+	a {
+		color: $color-text;
+		display: block;
+		font-weight: 700;
+		padding: 8px 0;
+		position: relative;
+		text-decoration: none;
+		transition: all 0.2s $ease;
+
+		&:hover {
+			color: $color-one-500;
+		}
+	}
+
+	> .list {
+
+		@include breakpoint(walker) {
+			@include visible;
+		}
+
+		.list {
+			display: none;
+			padding-left: 8px;
+
+			a {
+				font-weight: 400;
+			}
+		}
+	}
+
+	.list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.item {
+		border-bottom: 1px solid $color-border-light;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+
+		&.item-current {
+
+			a {
+				color: $color-one-500;
+			}
+		}
+	}
+
+	.toggle {
+
+		&:after {
+			content: "+";
+			position: absolute;
+			right: 0;
+			top: 8px;
+		}
+
+		&.is-toggled {
+
+			&:after {
+				content: "-";
+			}
+		}
+	}
+
+	.count {
+		@include font-size-300;
+		color: $color-text-light;
+		font-weight: 400;
+	}
+}

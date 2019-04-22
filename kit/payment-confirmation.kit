@@ -1,0 +1,135 @@
+<!-- @import variables -->
+<!-- $payment-nav: item item-selected -->
+<!-- @import header -->
+
+			<div class="site-content">
+				<div class="inner wrapper">
+
+					<div class="main" role="main" itemscope itemprop="mainContentOfPage">
+						<header class="main-header">
+							<h1 class="title">Payment Confirmation</h1>
+							<p>Silahkan konfirmasi pembayaran Anda apabila Anda membayar dengan cara Transfer Bank.</p>
+						</header>
+						<div class="main-content">
+							<div class="payment-confirmation">
+								<div class="payment-confirmation-section">
+									<div class="payment-confirmation-nav">
+										<ul class="list">
+											<li class="item"><a href="#order-payment-confirmation" class="tab js-tab" data-tab-group="payment">Pembayaran Order</a></li>
+											<li class="item"><a href="#registration-payment-confirmation" class="tab js-tab is-tabbed" data-tab-group="payment">Pembayaran Registrasi</a></li>
+										</ul>
+									</div>
+									<div id="order-payment-confirmation" class="payment-confirmation-form js-tab-target is-tabbed" data-tab-group="payment">
+										<div class="form-group">
+											<label for="checkout-id" class="label">Order ID <span class="req">*</span></label>
+											<input type="text" id="checkout-id" class="input">
+										</div>
+										<div class="form-group">
+											<label for="checkout-email" class="label">Email <span class="req">*</span></label>
+											<input type="text" id="checkout-email" class="input">
+										</div>
+										<div class="form-group">
+											<label for="checkout-bank-to" class="label">Bank Tujuan <span class="req">*</span></label>
+											<select id="checkout-bank-to" class="input" name="checkout-bank-to">
+												<option>BCA 070067742</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="checkout-bank-from" class="label">Dari Bank <span class="req">*</span></label>
+											<input type="text" id="checkout-bank-from" class="input">
+										</div>
+										<div class="form-group">
+											<label for="checkout-bank-number" class="label">No. Rekening <span class="req">*</span></label>
+											<input type="text" id="checkout-bank-number" class="input">
+										</div>
+										<div class="form-group">
+											<label for="checkout-bank-owner" class="label">Pemilik Rekening <span class="req">*</span></label>
+											<input type="text" id="checkout-bank-owner" class="input">
+										</div>
+										<div class="form-group">
+											<label for="checkout-date" class="label">Tanggal Pembayaran <span class="req">*</span></label>
+											<input type="text" id="checkout-date" class="input">
+										</div>
+										<div class="form-file js-form-file form-group">
+											<label class="label">File</label>
+											<div class="input">
+												<input type="file" id="checkout-attachment" class="form-file-input" name="checkout-attachment" data-multiple-caption="{count} files selected" multiple>
+												<label for="checkout-attachment" class="form-file-label"><span class="button"><i class="fa fa-upload"></i> Browse files</span> <span class="caption">No file selected&hellip;</span></label>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="checkout-notes" class="label">Catatan</label>
+											<textarea type="text" id="checkout-notes" class="input"></textarea>
+										</div>
+										<div class="form-group">
+											<button class="button">Konfirmasi</button>
+										</div>
+									</div>
+
+									<div id="registration-payment-confirmation" class="payment-confirmation-form js-tab-target" data-tab-group="payment">
+										<div class="form-group">
+											<label for="checkout-email" class="label">Email Registrasi <span class="req">*</span></label>
+											<input type="text" id="checkout-email" class="input">
+										</div>
+										<div class="form-group">
+											<label for="checkout-bank-to" class="label">Bank Tujuan <span class="req">*</span></label>
+											<select id="checkout-bank-to" class="input" name="checkout-bank-to">
+												<option>BCA 070067742</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="checkout-bank-from" class="label">Dari Bank <span class="req">*</span></label>
+											<input type="text" id="checkout-bank-from" class="input">
+										</div>
+										<div class="form-group">
+											<label for="checkout-bank-number" class="label">No. Rekening <span class="req">*</span></label>
+											<input type="text" id="checkout-bank-number" class="input">
+										</div>
+										<div class="form-group">
+											<label for="checkout-bank-owner" class="label">Pemilik Rekening <span class="req">*</span></label>
+											<input type="text" id="checkout-bank-owner" class="input">
+										</div>
+										<div class="form-group">
+											<label for="checkout-date" class="label">Tanggal Pembayaran <span class="req">*</span></label>
+											<input type="text" id="checkout-date" class="input">
+										</div>
+										<div class="form-file js-form-file form-group">
+											<label class="label">File</label>
+											<div class="input">
+												<input type="file" id="checkout-attachment" class="form-file-input" name="checkout-attachment" data-multiple-caption="{count} files selected" multiple>
+												<label for="checkout-attachment" class="form-file-label"><span class="button"><i class="fa fa-upload"></i> Browse files</span> <span class="caption">No file selected&hellip;</span></label>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="checkout-notes" class="label">Catatan</label>
+											<textarea type="text" id="checkout-notes" class="input"></textarea>
+										</div>
+										<div class="form-group">
+											<button class="button">Konfirmasi</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="payment-confirmation-info payment-confirmation-section">
+									<p>
+										<strong>Jam Kerja</strong><br>
+										Senin – Jumat: 09.00 – 18.00<br>
+										Sabtu: 09.00 – 14.00<br>
+										Tutup pada hari Minggu dan hari libur nasional
+									</p>
+									<address class="address">
+										<strong>Alamat</strong><br>
+										DISTRI.ID<br>
+										Jl. Pangeran Jayakarta 129 No. D6<br>
+										Sawah Besar - Jakarta Pusat 10730<br>
+										T: (021) - 6016581
+									</address>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+<!-- @import footer -->

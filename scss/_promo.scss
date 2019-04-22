@@ -1,0 +1,34 @@
+.promo-page-header {
+	background-color: $color-700;
+	background-image: url("assets/images/bg-reward.png");
+	background-size: 150px 150px;
+	color: $white;
+	text-align: center;
+
+	.title {
+		@include font-size-h2;
+	}
+}
+
+.promo-banners {
+	display: flex;
+	flex-direction: column;
+	margin: -4px;
+
+	@include breakpoint(creeper) {
+		flex-direction: row;
+	}
+
+	@include breakpoint(crawler) {
+		margin: -8px;
+	}
+}
+
+.promo-banner {
+	@include box-shadow-500;
+	margin: 4px;
+
+	@include breakpoint(crawler) {
+		margin: 8px;
+	}
+}

@@ -1,0 +1,197 @@
+.popup-inline {
+	background-color: $white;
+	margin: 0 auto;
+	max-width: 768px;
+	position: relative;
+
+	.popup-inline-header,
+	.popup-inline-content,
+	.popup-inline-footer {
+		padding: 16px;
+
+		@include breakpoint(creeper) {
+			padding: 16px 24px;
+		}
+	}
+
+	.popup-inline-header {
+		border-bottom: 1px solid $color-border;
+	}
+
+	.popup-inline-content {
+
+		@include breakpoint(creeper) {
+			padding: 24px;
+		}
+	}
+
+	.popup-inline-footer {
+		background-color: $color-background-light;
+	}
+}
+
+.popup-address {
+
+	.popup-inline-footer {
+		text-align: right;
+	}
+}
+
+.popup-login {
+	max-width: 512px;
+}
+
+.popup-product-content {
+	overflow: hidden;
+	padding: 24px;
+	text-align: center;
+
+	@include breakpoint(creeper) {
+		padding: 32px;
+	}
+
+	@include breakpoint(crawler) {
+		padding: 48px;
+		text-align: left;
+	}
+}
+
+.popup-product-image {
+	margin-bottom: 16px;
+
+	@include breakpoint(crawler) {
+		float: left;
+		margin-bottom: 0;
+		margin-right: 16px;
+		width: 160px;
+	}
+}
+
+.popup-product-meta {
+
+	.name {
+		@include font-size-h4;
+		font-weight: 700;
+		margin-bottom: 8px;
+	}
+}
+
+.popup-product-stats {
+	border: 1px solid $color-border;
+
+	@include breakpoint(creeper) {
+		display: flex;
+	}
+}
+
+.popup-product-stat {
+	border-bottom: 1px solid $color-border;
+	display: flex;
+	flex: 1 1 0;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 0;
+	padding: 4px;
+	text-align: center;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+
+	@include breakpoint(creeper) {
+		border-bottom: 0;
+		border-right: 1px solid $color-border;
+		padding: 8px;
+
+		&:last-child {
+			border-right: 0;
+		}
+	}
+
+	.label {
+		color: $color-text-light;
+		display: inline-block;
+		font-size: $font-size-300;
+		line-height: 1.230769231;
+		text-transform: uppercase;
+
+		@include breakpoint(creeper) {
+			font-size: $font-size-300;
+			line-height: 1.230769231;
+		}
+	}
+
+	.value {
+		color: $color-one-600;
+		display: block;
+		font-weight: 700;
+		white-space: nowrap;
+	}
+}
+
+.popup-review-content {
+	padding: 48px;
+}
+
+.popup-reward-content {
+	overflow: hidden;
+	padding: 24px;
+	text-align: center;
+
+	@include breakpoint(creeper) {
+		padding: 32px;
+	}
+
+	@include breakpoint(crawler) {
+		padding: 48px;
+		text-align: left;
+	}
+
+	.notification {
+		background-color: $color-success-light;
+		border: 1px solid $color-success;
+		padding: 12px;
+
+		&.notification-warning {
+			background-color: $color-warning-light;
+			border: 1px solid $color-warning;
+		}
+
+		&.notification-alert {
+			background-color: $color-alert-light;
+			border: 1px solid $color-alert;
+		}
+	}
+
+	.question {
+		@include font-size-700;
+		font-weight: 700;
+	}
+}
+
+.popup-reward-image {
+	margin-bottom: 16px;
+
+	@include breakpoint(crawler) {
+		float: left;
+		margin-bottom: 0;
+		margin-right: 16px;
+		width: 160px;
+	}
+}
+
+.popup-reward-meta {
+
+	.name {
+		@include font-size-h5;
+		font-weight: 700;
+		margin-bottom: 8px;
+	}
+
+	.point {
+		@include font-size-h5;
+		color: $color-one-500;
+		font-weight: 700;
+		margin-bottom: 4px;
+	}
+}

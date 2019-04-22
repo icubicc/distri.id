@@ -1,0 +1,122 @@
+// COLORS
+
+$white: 				#FFFFFF;
+$black: 				#000000;
+
+$color-0: 				$white;
+$color-100: 			#F4F4F4; // background-color-light
+$color-200: 			#E2E2E2; // border-color-light
+$color-300: 			#D4D4D4; // border-color
+$color-400: 			#B8B8B8; // border-color-dark
+$color-500: 			#727171; // text-color-light
+$color-600: 			#5B5A5A; // -
+$color-700: 			#383838; // text-color
+$color-800: 			#212121; // text-color-dark, background-color-dark
+$color-900: 			$black;
+
+$color-one-100: 		#DCF1E9;
+$color-one-200: 		#B9E3D3;
+$color-one-300: 		#97D5BE;
+$color-one-400: 		#74C7A8;
+$color-one-500: 		#52BA93;
+$color-one-600: 		#419475;
+$color-one-700: 		#316F58;
+$color-one-800: 		#204A3A;
+
+$color-info: 			#2E7FC1;
+$color-info-light: 		#CEE5F5;
+$color-info-dark: 		darken($color-info, 16%);
+
+$color-success: 		$color-one-500;
+$color-success-light: 	$color-one-200;
+$color-success-dark: 	$color-one-700;
+
+$color-warning: 		#E1AF39;
+$color-warning-light: 	#FFEBCC;
+$color-warning-dark: 	darken($color-warning, 16%);
+
+$color-alert: 			#D1354D;
+$color-alert-light: 	#FABEC4;
+$color-alert-dark: 		darken($color-alert, 16%);
+
+$color-viewport: 			$color-800;
+
+$color-background-light: 	$color-100;
+$color-background: 			$color-700;
+$color-background-dark: 	$color-800;
+
+$color-text-dark: 			$color-800;
+$color-text: 				$color-700;
+$color-text-light: 			$color-500;
+
+$color-border-dark: 		$color-400;
+$color-border: 				$color-300;
+$color-border-light: 		$color-200;
+
+$color-dribbble: 		#ea4c89;
+$color-facebook: 		#3b5998;
+$color-google: 			#cc3732;
+$color-instagram: 		#e1306c;
+$color-line: 			#1BB71F;
+$color-linkedin: 		#0077b5;
+$color-pinterest: 		#cc2127;
+$color-twitter: 		#00aced;
+$color-whatsapp: 		#33D16B;
+$color-youtube: 		#cd201f;
+
+// TYPOGRAPHY
+
+$sans-serif: "Nunito", sans-serif;
+$serif: Georgia, serif;
+$heading: "Roboto Condensed", sans-serif;
+$monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-size-100: 11px;
+$line-height-100: 1.454545455;
+
+$font-size-200: 12px;
+$line-height-200: 1.333333333;
+
+$font-size-300: 13px;
+$line-height-300: 1.384615385;
+
+$font-size-400: 14px;
+$line-height-400: 1.428571429;
+
+$font-size-500: 16px;
+$line-height-500: 1.5;
+
+$font-size-600: 18px;
+$line-height-600: 1.444444444;
+
+$font-size-700: 20px;
+$line-height-700: 1.4;
+
+$font-size-800: 24px;
+$line-height-800: 1.333333333;
+
+$font-size-900: 36px;
+$line-height-900: 1.222222222;
+
+$font-size-h1: 36px;
+$line-height-h1: 1.111111111;
+
+$font-size-h2: 30px;
+$line-height-h2: 1.2;
+
+$font-size-h3: 24px;
+$line-height-h3: 1.166666667;
+
+$font-size-h4: 20px;
+$line-height-h4: 1.2;
+
+$font-size-h5: 18px;
+$line-height-h5: 1.333333333;
+
+$font-size-h6: 16px;
+$line-height-h6: 1.25;
+
+// TRANSITION
+
+$ease: ease-out;
+$bounce: cubic-bezier(0.5, 0.15, 0.25, 1.25);

@@ -1,0 +1,109 @@
+.comments {
+	border-top: 1px solid $color-border;
+	margin-top: 32px;
+	padding-top: 32px;
+}
+
+.comment-list {
+	list-style: none;
+	margin: 0 0 32px;
+	padding: 0;
+
+	.comment {
+		background-color: $color-border;
+		margin-top: 1px;
+		padding: 16px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&.bypostauthor {
+			background-color: $color-border-dark;
+			color: $white;
+		}
+	}
+
+	.children {
+		list-style: none;
+		margin: 16px 0 0;
+		padding: 0;
+	}
+}
+
+.comment-body {
+	position: relative;
+
+	.reply {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.comment-reply-link {
+		@include font-size-400;
+		background-color: $color-border-dark;
+		color: $white;
+		display: block;
+		padding: 4px 16px;
+		transition: all 0.2s $ease;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}
+
+.comment-author {
+	margin-bottom: 8px;
+
+	> * {
+		vertical-align: middle;
+	}
+
+	.avatar {
+		height: 24px;
+		margin-right: 4px;
+		width: 24px;
+
+		@include breakpoint(crawler) {
+			height: 48px;
+			width: 48px;
+		}
+	}
+}
+
+.comment-respond {
+
+	.comment-reply-title {
+		margin-bottom: 12px;
+	}
+
+	.comment-notes {
+		@include font-size-400;
+		margin-bottom: 24px;
+	}
+
+	p {
+		margin-bottom: 16px;
+		overflow: hidden;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		label {
+			display: block;
+			font-weight: 600;
+			padding: 5px 0;
+			width: 100%;
+		}
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		width: 100%;
+	}
+}

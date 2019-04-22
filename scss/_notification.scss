@@ -1,0 +1,51 @@
+.notification-info {
+	@include font-size-400;
+	background-color: $color-info-light;
+	border: 1px solid rgba($color-info, 0.2);
+	color: $color-info-dark;
+	margin-bottom: 12px;
+	padding: 8px 12px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.notification-success {
+	@include font-size-400;
+	background-color: $color-success-light;
+	border: 1px solid rgba($color-success, 0.2);
+	color: $color-success-dark;
+	margin-bottom: 12px;
+	padding: 8px 12px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.notification-warning {
+	@include font-size-400;
+	background-color: $color-warning-light;
+	border: 1px solid rgba($color-warning, 0.2);
+	color: $color-warning-dark;
+	margin-bottom: 12px;
+	padding: 8px 12px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.notification-alert {
+	@include font-size-400;
+	background-color: $color-alert-light;
+	border: 1px solid rgba($color-alert, 0.25);
+	color: $color-alert-dark;
+	margin-bottom: 12px;
+	padding: 8px 12px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

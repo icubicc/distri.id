@@ -1,0 +1,29 @@
+.contact-page {
+
+	@include breakpoint(creeper) {
+		display: flex;
+	}
+}
+
+.contact-page-main {
+	flex: 1 1 0;
+
+	.title {
+		text-transform: uppercase;
+	}
+}
+
+.contact-page-side {
+	 flex: 1 1 0;
+	 margin-top: 32px;
+
+	 @include breakpoint(creeper) {
+		margin-top: 0;
+	 	padding-left: 48px;
+	 }
+
+	 .map {
+		 background-color: $color-100;
+		 margin-bottom: 12px;
+	 }
+}

@@ -1,0 +1,21 @@
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 464px;
+	padding: 16px;
+
+	@include breakpoint(creeper) {
+		max-width: 624px;
+		padding: 24px;
+	}
+
+	@include breakpoint(crawler) {
+		max-width: 1104px;
+		padding: 32px;
+	}
+
+	@include breakpoint(jumper) {
+		max-width: 1280px;
+		padding: 40px;
+	}
+}

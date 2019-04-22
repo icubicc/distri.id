@@ -1,0 +1,53 @@
+.social-share {
+	display: flex;
+	margin-bottom: 24px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.label {
+		flex: 0 0 auto;
+		margin: 0 12px 0 0;
+		vertical-align: middle;
+	}
+
+	.list {
+		flex: 1 1 auto;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.item {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.link {
+		@include font-size-400;
+		background-color: $color-one-500;
+		border-radius: 3px;
+		color: $white;
+		display: block;
+		padding: 2px 8px;
+		transition: all 0.2s $ease;
+
+		&.link-facebook {
+			background-color: $color-facebook;
+		}
+
+		&.link-twitter {
+			background-color: $color-twitter;
+		}
+
+		&.link-google {
+			background-color: $color-google;
+		}
+
+		&:hover {
+			opacity: 0.8;
+			text-decoration: none;
+		}
+	}
+}

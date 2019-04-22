@@ -1,0 +1,19 @@
+.icon {
+	fill: currentColor;
+	height: 1em;
+	position: relative;
+	top: -1px;
+	width: 1em;
+}
+
+.icon-success {
+	fill: $color-success;
+}
+
+.icon-alert {
+	fill: $color-alert;
+}
+
+.icon-warning {
+	fill: $color-warning;
+}

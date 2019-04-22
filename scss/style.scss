@@ -1,0 +1,75 @@
+/*!
+Theme Name: DISTRI.ID
+Theme URI: http://distri.id/
+Author: ICUBIC
+Author URI: http://icubic.co.id/
+Description: Website for distri.id reseller. This site is designed in February 2017 by ICUBIC.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: responsive-layout, mobile-first
+*/
+
+// variables
+@import "variables";
+@import "mixins";
+
+// plugins
+@import "plugins/normalize";
+@import "plugins/flickity";
+@import "plugins/flickity-custom";
+@import "plugins/magnific-popup";
+@import "plugins/magnific-popup-custom";
+@import "plugins/stickyfill";
+@import "plugins/wordpress";
+@import "plugins/woocommerce";
+
+// globals
+@import "global";
+@import "helper";
+@import "modifier";
+@import "keyframes";
+
+// containers
+@import "site";
+@import "main";
+
+// modules
+@import "about";
+@import "account";
+@import "blog";
+@import "breadcrumb";
+@import "button";
+@import "cart";
+@import "checkout";
+@import "comment";
+@import "contact";
+@import "coupon";
+@import "form";
+@import "icon";
+@import "list";
+@import "marketing";
+@import "notification";
+@import "order";
+@import "page";
+@import "pagination";
+@import "payment";
+@import "popup";
+@import "product";
+@import "promo";
+@import "rating";
+@import "review";
+@import "reward";
+@import "search";
+@import "slider";
+@import "social";
+@import "table";
+@import "testimonial";
+@import "thumbnail";
+@import "tooltip";
+@import "user";
+@import "wrapper";
+
+// media
+@import "mobile";
+@media print { @import "print"; }

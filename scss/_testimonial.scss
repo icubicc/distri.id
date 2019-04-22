@@ -1,0 +1,68 @@
+.testimonial-highlights {
+
+	.flickity-prev-next-button {
+		background-color: transparent;
+		z-index: 2;
+
+		&.previous {
+			left: -12px;
+		}
+
+		&.next {
+			right: -12px;
+		}
+
+		.arrow {
+			fill: $white;
+		}
+	}
+}
+
+.testimonial-highlight {
+	overflow: hidden;
+	padding: 0 8px;
+	width: 80%;
+
+	@include breakpoint(creeper) {
+		padding: 0 12px;
+	}
+
+	@include breakpoint(walker) {
+		padding: 0 16px;
+		width: 72%;
+	}
+
+	@include breakpoint(runner) {
+		padding: 0 24px;
+		width: 64%;
+	}
+
+	.image {
+		margin-bottom: 12px;
+
+		@include breakpoint(crawler) {
+			float: left;
+			margin-bottom: 0;
+			margin-right: 16px;
+			max-width: 240px;
+			width: 40%;
+		}
+	}
+
+	.text {
+		@include font-size-400;
+		overflow: hidden;
+
+		@include breakpoint(jumper) {
+			@include font-size-500;
+		}
+	}
+
+	.desc {
+		margin-bottom: 4px;
+	}
+
+	.author {
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,123 @@
+<!-- @import variables -->
+<!-- $checkout-nav: item item-selected -->
+<!-- @import header-login -->
+
+			<div class="site-content">
+				<div class="inner wrapper">
+
+					<div class="main" role="main" itemscope itemprop="mainContentOfPage">
+						<div class="main-content">
+							<div class="checkout-form">
+								<header class="checkout-form-header">
+									<h1 class="title">Pembayaran</h1>
+								</header>
+								<div class="checkout-form-content">
+									<div class="checkout-payment checkout-section">
+										<header class="checkout-section-header">
+											<h2 class="title">Metode Pembayaran</h2>
+										</header>
+										<div class="checkout-section-content">
+											<div class="form-radios">
+												<div class="form-group">
+													<input type="radio" id="checkout-payment-transfer" class="input" name="checkout-payment" checked>
+													<label for="checkout-payment-transfer" class="label">Transfer</label>
+													<div class="desc">
+														<p>Pembayaran melalui transfer ATM / Internet Banking / SMS Banking. Pembayaran dapat ditransfer ke rekening BCA, Mandiri atau BNI.</p>
+														<ul class="logos">
+															<li class="logo"><img src="assets/images/icon-payment-bca.png" alt="Logo Bank BCA"></li>
+															<li class="logo"><img src="assets/images/icon-payment-mandiri.png" alt="Logo Bank Mandiri"></li>
+															<li class="logo"><img src="assets/images/icon-payment-bni.png" alt="Logo Bank BNI"></li>
+														</ul>
+													</div>
+												</div>
+												<div class="form-group">
+													<input type="radio" id="checkout-payment-creditcard" class="input" name="checkout-payment">
+													<label for="checkout-payment-creditcard" class="label">Kartu Kredit</label>
+													<div class="desc">
+														<p>Kami menerima kartu kredit berlogo Visa dan MasterCard. Klik tombol bayar untuk melanjutkan pembayaran.</p>
+														<ul class="logos">
+															<li class="logo"><img src="assets/images/icon-payment-mastercard.png" alt="Logo Mastercard"></li>
+															<li class="logo"><img src="assets/images/icon-payment-visa.png" alt="Logo Visa"></li>
+														</ul>
+													</div>
+												</div>
+												<div class="form-group">
+													<input type="radio" id="checkout-payment-bcaklikpay" class="input" name="checkout-payment">
+													<label for="checkout-payment-bcaklikpay" class="label">BCA KlikPay</label>
+													<div class="desc">
+														<p>Kami menerima pembayaran melalui BCA Klikpay. Pembayaran BCA Klikpay akan diproses melalui website BCA Klikpay. Klik tombol bayar untuk melanjutkan pembayaran.</p>
+														<ul class="logos">
+															<li class="logo"><img src="assets/images/icon-payment-bcaklikpay.png" alt="Logo BCA KlikPay"></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<footer class="checkout-form-footer">
+									<div class="form-group form-group-right">
+										<a href="checkout-3.html" class="button button-large">Bayar Pesanan</a>
+									</div>
+								</footer>
+							</div>
+						</div>
+					</div>
+
+					<div class="main-sidebar">
+						<div class="checkout-summary section">
+							<header class="checkout-summary-header">
+								<h2 class="title">Order Summary</h2>
+							</header>
+							<div class="checkout-summary-content">
+								<div class="checkout-summary-items">
+									<div class="checkout-summary-item">
+										<div class="meta">
+											<h4 class="name">Beauty Protector Jet Set</h4>
+											<p class="quantity"><span class="count">2</span> &times; <span class="price">Rp 450.000</span></p>
+										</div>
+										<p class="subtotal">Rp 900.000</p>
+									</div>
+									<div class="checkout-summary-item">
+										<div class="meta">
+											<h4 class="name">Macadamia Professional™ Nourishing Moisture Oil Mousse</h4>
+											<p class="quantity"><span class="count">2</span> &times; <span class="price">Rp 450.000</span></p>
+										</div>
+										<p class="subtotal">Rp 900.000</p>
+									</div>
+								</div>
+								<div class="checkout-summary-pricing">
+									<p class="row"><span class="label">Subtotal</span> <span class="value">Rp 700.000</span></p>
+									<p class="row"><span class="label">Shipping</span> <span class="value">Rp 24.000</span></p>
+									<p class="discount row"><span class="label">Discount <span class="sublabel">Coupon: DISTRINEW</span></span> <span class="value">- Rp 40.000</span></p>
+									<p class="row"><span class="label">Convenience Fee</span> <span class="value">Rp 21.720</span></p> <!-- 3% dari subtotal dan shipping apabila pembayaran dengan kartu kredit -->
+									<p class="total row"><span class="label">Total</span> <span class="value">Rp 705.720</span></p>
+								</div>
+							</div>
+							<div class="checkout-summary-footer">
+								<a href="#" class="button button-gray">Edit Cart</a>
+							</div>
+						</div>
+
+						<div class="checkout-review section">
+							<header class="checkout-review-header">
+								<h3 class="title">Alamat Pengiriman</h3>
+								<a href="checkout-1.html" class="link">Edit</a>
+							</header>
+							<div class="checkout-review-content">
+								<address class="address">
+									<strong>Carlos Santana</strong><br>
+									Jl. Clurit Parang Tajam No. 16<br>
+									Penjaringan, Jakarta Utara<br>
+									DKI Jakarta 14444<br>
+									T: 081234888888
+								</address>
+								<p class="courier">Metode Pengiriman: <span class="value">JNE REG</span></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+<!-- @import footer -->

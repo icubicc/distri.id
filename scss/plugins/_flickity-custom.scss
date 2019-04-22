@@ -1,0 +1,49 @@
+.flickity-prev-next-button {
+	height: 32px;
+	width: 32px;
+
+	@include breakpoint(crawler) {
+		height: 48px;
+		width: 48px;
+	}
+}
+
+.flickity-prev-next-button,
+.flickity-prev-next-button:hover {
+	background: transparent;
+}
+
+.flickity-prev-next-button.previous {
+	left: -16px;
+
+	@include breakpoint(creeper) {
+		left: -24px;
+	}
+
+	@include breakpoint(crawler) {
+		left: -32px;
+	}
+
+	@include breakpoint(jumper) {
+		left: -40px;
+	}
+}
+.flickity-prev-next-button.next {
+	right: -16px;
+
+	@include breakpoint(creeper) {
+		right: -24px;
+	}
+
+	@include breakpoint(crawler) {
+		right: -32px;
+	}
+
+	@include breakpoint(jumper) {
+		right: -40px;
+	}
+}
+
+.flickity-prev-next-button .arrow {
+  fill: $color-500;
+}
